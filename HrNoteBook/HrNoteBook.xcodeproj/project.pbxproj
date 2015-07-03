@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A9B0C881B426A2000204D8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B0C871B426A2000204D8C /* main.m */; };
+		0A9B0C8B1B426A2000204D8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B0C8A1B426A2000204D8C /* AppDelegate.m */; };
+		0A9B0C8E1B426A2000204D8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B0C8D1B426A2000204D8C /* ViewController.m */; };
+		0A9B0C911B426A2000204D8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A9B0C8F1B426A2000204D8C /* Main.storyboard */; };
+		0A9B0C931B426A2000204D8C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A9B0C921B426A2000204D8C /* Images.xcassets */; };
+		0A9B0C961B426A2000204D8C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A9B0C941B426A2000204D8C /* LaunchScreen.xib */; };
+		0A9B0CA21B426A2000204D8C /* HrNoteBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B0CA11B426A2000204D8C /* HrNoteBookTests.m */; };
+		0A9B0CB11B426BE300204D8C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B0CAF1B426BE300204D8C /* HomeViewController.m */; };
+		0A9B0CB21B426BE300204D8C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A9B0CB01B426BE300204D8C /* HomeViewController.xib */; };
+		0A9B0CB61B426DB500204D8C /* NotePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B0CB41B426DB500204D8C /* NotePageController.m */; };
+		0A9B0CB91B426E3000204D8C /* NotePageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A9B0CB81B426E3000204D8C /* NotePageController.xib */; };
+		0A9B0CC61B427FF400204D8C /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B0CBC1B427FF400204D8C /* FMDatabase.m */; };
+		0A9B0CC71B427FF400204D8C /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B0CBE1B427FF400204D8C /* FMDatabaseAdditions.m */; };
+		0A9B0CC81B427FF400204D8C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B0CC01B427FF400204D8C /* FMDatabasePool.m */; };
+		0A9B0CC91B427FF400204D8C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B0CC21B427FF400204D8C /* FMDatabaseQueue.m */; };
+		0A9B0CCA1B427FF400204D8C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B0CC51B427FF400204D8C /* FMResultSet.m */; };
+		0A9B0CCD1B42817F00204D8C /* SqlService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B0CCC1B42817F00204D8C /* SqlService.m */; };
+		0A9B0CD01B4281C600204D8C /* NotePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B0CCF1B4281C600204D8C /* NotePage.m */; };
+		0A9B0CD31B42945600204D8C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9B0CD21B42945600204D8C /* libsqlite3.dylib */; };
+		0A9B0CD61B429AD400204D8C /* TimeDealler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B0CD51B429AD400204D8C /* TimeDealler.m */; };
+		0A9B0CD91B42A3E200204D8C /* NotePageSearvice.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B0CD81B42A3E200204D8C /* NotePageSearvice.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A9B0C9C1B426A2000204D8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A9B0C7A1B426A2000204D8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A9B0C811B426A2000204D8C;
+			remoteInfo = HrNoteBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A459A971B4385130054D077 /* NotePageUpdateDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotePageUpdateDelegate.h; sourceTree = "<group>"; };
+		0A9B0C821B426A2000204D8C /* HrNoteBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HrNoteBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9B0C861B426A2000204D8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A9B0C871B426A2000204D8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A9B0C891B426A2000204D8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0A9B0C8A1B426A2000204D8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0A9B0C8C1B426A2000204D8C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0A9B0C8D1B426A2000204D8C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0A9B0C901B426A2000204D8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A9B0C921B426A2000204D8C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0A9B0C951B426A2000204D8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0A9B0C9B1B426A2000204D8C /* HrNoteBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HrNoteBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9B0CA01B426A2000204D8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A9B0CA11B426A2000204D8C /* HrNoteBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HrNoteBookTests.m; sourceTree = "<group>"; };
+		0A9B0CAE1B426BE300204D8C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		0A9B0CAF1B426BE300204D8C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		0A9B0CB01B426BE300204D8C /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		0A9B0CB31B426DB500204D8C /* NotePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotePageController.h; sourceTree = "<group>"; };
+		0A9B0CB41B426DB500204D8C /* NotePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotePageController.m; sourceTree = "<group>"; };
+		0A9B0CB81B426E3000204D8C /* NotePageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotePageController.xib; sourceTree = "<group>"; };
+		0A9B0CBB1B427FF400204D8C /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		0A9B0CBC1B427FF400204D8C /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		0A9B0CBD1B427FF400204D8C /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		0A9B0CBE1B427FF400204D8C /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		0A9B0CBF1B427FF400204D8C /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		0A9B0CC01B427FF400204D8C /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		0A9B0CC11B427FF400204D8C /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		0A9B0CC21B427FF400204D8C /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		0A9B0CC31B427FF400204D8C /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		0A9B0CC41B427FF400204D8C /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		0A9B0CC51B427FF400204D8C /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		0A9B0CCB1B42817F00204D8C /* SqlService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqlService.h; sourceTree = "<group>"; };
+		0A9B0CCC1B42817F00204D8C /* SqlService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqlService.m; sourceTree = "<group>"; };
+		0A9B0CCE1B4281C600204D8C /* NotePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotePage.h; sourceTree = "<group>"; };
+		0A9B0CCF1B4281C600204D8C /* NotePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotePage.m; sourceTree = "<group>"; };
+		0A9B0CD21B42945600204D8C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		0A9B0CD41B429AD400204D8C /* TimeDealler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeDealler.h; sourceTree = "<group>"; };
+		0A9B0CD51B429AD400204D8C /* TimeDealler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeDealler.m; sourceTree = "<group>"; };
+		0A9B0CD71B42A3E200204D8C /* NotePageSearvice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotePageSearvice.h; sourceTree = "<group>"; };
+		0A9B0CD81B42A3E200204D8C /* NotePageSearvice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotePageSearvice.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A9B0C7F1B426A2000204D8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9B0CD31B42945600204D8C /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9B0C981B426A2000204D8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A9B0C791B426A2000204D8C = {
+			isa = PBXGroup;
+			children = (
+				0A9B0C841B426A2000204D8C /* HrNoteBook */,
+				0A9B0C9E1B426A2000204D8C /* HrNoteBookTests */,
+				0A9B0CD11B42943E00204D8C /* Frameworks */,
+				0A9B0C831B426A2000204D8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A9B0C831B426A2000204D8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B0C821B426A2000204D8C /* HrNoteBook.app */,
+				0A9B0C9B1B426A2000204D8C /* HrNoteBookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A9B0C841B426A2000204D8C /* HrNoteBook */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B0CAB1B426A5F00204D8C /* controller */,
+				0A9B0CAC1B426A5F00204D8C /* model */,
+				0A9B0CAD1B426A5F00204D8C /* sqlib */,
+				0A9B0C891B426A2000204D8C /* AppDelegate.h */,
+				0A9B0C8A1B426A2000204D8C /* AppDelegate.m */,
+				0A9B0C8C1B426A2000204D8C /* ViewController.h */,
+				0A9B0C8D1B426A2000204D8C /* ViewController.m */,
+				0A9B0C8F1B426A2000204D8C /* Main.storyboard */,
+				0A9B0C921B426A2000204D8C /* Images.xcassets */,
+				0A9B0C941B426A2000204D8C /* LaunchScreen.xib */,
+				0A9B0C851B426A2000204D8C /* Supporting Files */,
+			);
+			path = HrNoteBook;
+			sourceTree = "<group>";
+		};
+		0A9B0C851B426A2000204D8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B0C861B426A2000204D8C /* Info.plist */,
+				0A9B0C871B426A2000204D8C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A9B0C9E1B426A2000204D8C /* HrNoteBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B0CA11B426A2000204D8C /* HrNoteBookTests.m */,
+				0A9B0C9F1B426A2000204D8C /* Supporting Files */,
+			);
+			path = HrNoteBookTests;
+			sourceTree = "<group>";
+		};
+		0A9B0C9F1B426A2000204D8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B0CA01B426A2000204D8C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A9B0CAB1B426A5F00204D8C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B0CAE1B426BE300204D8C /* HomeViewController.h */,
+				0A9B0CAF1B426BE300204D8C /* HomeViewController.m */,
+				0A9B0CB01B426BE300204D8C /* HomeViewController.xib */,
+				0A9B0CB31B426DB500204D8C /* NotePageController.h */,
+				0A9B0CB41B426DB500204D8C /* NotePageController.m */,
+				0A9B0CB81B426E3000204D8C /* NotePageController.xib */,
+				0A459A971B4385130054D077 /* NotePageUpdateDelegate.h */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		0A9B0CAC1B426A5F00204D8C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B0CCB1B42817F00204D8C /* SqlService.h */,
+				0A9B0CCC1B42817F00204D8C /* SqlService.m */,
+				0A9B0CCE1B4281C600204D8C /* NotePage.h */,
+				0A9B0CCF1B4281C600204D8C /* NotePage.m */,
+				0A9B0CD41B429AD400204D8C /* TimeDealler.h */,
+				0A9B0CD51B429AD400204D8C /* TimeDealler.m */,
+				0A9B0CD71B42A3E200204D8C /* NotePageSearvice.h */,
+				0A9B0CD81B42A3E200204D8C /* NotePageSearvice.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		0A9B0CAD1B426A5F00204D8C /* sqlib */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B0CBA1B427FF400204D8C /* fmdb */,
+			);
+			path = sqlib;
+			sourceTree = "<group>";
+		};
+		0A9B0CBA1B427FF400204D8C /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B0CBB1B427FF400204D8C /* FMDatabase.h */,
+				0A9B0CBC1B427FF400204D8C /* FMDatabase.m */,
+				0A9B0CBD1B427FF400204D8C /* FMDatabaseAdditions.h */,
+				0A9B0CBE1B427FF400204D8C /* FMDatabaseAdditions.m */,
+				0A9B0CBF1B427FF400204D8C /* FMDatabasePool.h */,
+				0A9B0CC01B427FF400204D8C /* FMDatabasePool.m */,
+				0A9B0CC11B427FF400204D8C /* FMDatabaseQueue.h */,
+				0A9B0CC21B427FF400204D8C /* FMDatabaseQueue.m */,
+				0A9B0CC31B427FF400204D8C /* FMDB.h */,
+				0A9B0CC41B427FF400204D8C /* FMResultSet.h */,
+				0A9B0CC51B427FF400204D8C /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		0A9B0CD11B42943E00204D8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B0CD21B42945600204D8C /* libsqlite3.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A9B0C811B426A2000204D8C /* HrNoteBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A9B0CA51B426A2000204D8C /* Build configuration list for PBXNativeTarget "HrNoteBook" */;
+			buildPhases = (
+				0A9B0C7E1B426A2000204D8C /* Sources */,
+				0A9B0C7F1B426A2000204D8C /* Frameworks */,
+				0A9B0C801B426A2000204D8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HrNoteBook;
+			productName = HrNoteBook;
+			productReference = 0A9B0C821B426A2000204D8C /* HrNoteBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A9B0C9A1B426A2000204D8C /* HrNoteBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A9B0CA81B426A2000204D8C /* Build configuration list for PBXNativeTarget "HrNoteBookTests" */;
+			buildPhases = (
+				0A9B0C971B426A2000204D8C /* Sources */,
+				0A9B0C981B426A2000204D8C /* Frameworks */,
+				0A9B0C991B426A2000204D8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A9B0C9D1B426A2000204D8C /* PBXTargetDependency */,
+			);
+			name = HrNoteBookTests;
+			productName = HrNoteBookTests;
+			productReference = 0A9B0C9B1B426A2000204D8C /* HrNoteBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A9B0C7A1B426A2000204D8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = fmstudios;
+				TargetAttributes = {
+					0A9B0C811B426A2000204D8C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					0A9B0C9A1B426A2000204D8C = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 0A9B0C811B426A2000204D8C;
+					};
+				};
+			};
+			buildConfigurationList = 0A9B0C7D1B426A2000204D8C /* Build configuration list for PBXProject "HrNoteBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A9B0C791B426A2000204D8C;
+			productRefGroup = 0A9B0C831B426A2000204D8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A9B0C811B426A2000204D8C /* HrNoteBook */,
+				0A9B0C9A1B426A2000204D8C /* HrNoteBookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A9B0C801B426A2000204D8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9B0CB91B426E3000204D8C /* NotePageController.xib in Resources */,
+				0A9B0C911B426A2000204D8C /* Main.storyboard in Resources */,
+				0A9B0C961B426A2000204D8C /* LaunchScreen.xib in Resources */,
+				0A9B0C931B426A2000204D8C /* Images.xcassets in Resources */,
+				0A9B0CB21B426BE300204D8C /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9B0C991B426A2000204D8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A9B0C7E1B426A2000204D8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9B0C8E1B426A2000204D8C /* ViewController.m in Sources */,
+				0A9B0CB61B426DB500204D8C /* NotePageController.m in Sources */,
+				0A9B0C8B1B426A2000204D8C /* AppDelegate.m in Sources */,
+				0A9B0CC61B427FF400204D8C /* FMDatabase.m in Sources */,
+				0A9B0CCA1B427FF400204D8C /* FMResultSet.m in Sources */,
+				0A9B0CD61B429AD400204D8C /* TimeDealler.m in Sources */,
+				0A9B0CD91B42A3E200204D8C /* NotePageSearvice.m in Sources */,
+				0A9B0C881B426A2000204D8C /* main.m in Sources */,
+				0A9B0CC81B427FF400204D8C /* FMDatabasePool.m in Sources */,
+				0A9B0CC71B427FF400204D8C /* FMDatabaseAdditions.m in Sources */,
+				0A9B0CD01B4281C600204D8C /* NotePage.m in Sources */,
+				0A9B0CB11B426BE300204D8C /* HomeViewController.m in Sources */,
+				0A9B0CCD1B42817F00204D8C /* SqlService.m in Sources */,
+				0A9B0CC91B427FF400204D8C /* FMDatabaseQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9B0C971B426A2000204D8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9B0CA21B426A2000204D8C /* HrNoteBookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A9B0C9D1B426A2000204D8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A9B0C811B426A2000204D8C /* HrNoteBook */;
+			targetProxy = 0A9B0C9C1B426A2000204D8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A9B0C8F1B426A2000204D8C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A9B0C901B426A2000204D8C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A9B0C941B426A2000204D8C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A9B0C951B426A2000204D8C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A9B0CA31B426A2000204D8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0A9B0CA41B426A2000204D8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A9B0CA61B426A2000204D8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HrNoteBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A9B0CA71B426A2000204D8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HrNoteBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0A9B0CA91B426A2000204D8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HrNoteBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HrNoteBook.app/HrNoteBook";
+			};
+			name = Debug;
+		};
+		0A9B0CAA1B426A2000204D8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HrNoteBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HrNoteBook.app/HrNoteBook";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A9B0C7D1B426A2000204D8C /* Build configuration list for PBXProject "HrNoteBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A9B0CA31B426A2000204D8C /* Debug */,
+				0A9B0CA41B426A2000204D8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A9B0CA51B426A2000204D8C /* Build configuration list for PBXNativeTarget "HrNoteBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A9B0CA61B426A2000204D8C /* Debug */,
+				0A9B0CA71B426A2000204D8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A9B0CA81B426A2000204D8C /* Build configuration list for PBXNativeTarget "HrNoteBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A9B0CA91B426A2000204D8C /* Debug */,
+				0A9B0CAA1B426A2000204D8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A9B0C7A1B426A2000204D8C /* Project object */;
+}
